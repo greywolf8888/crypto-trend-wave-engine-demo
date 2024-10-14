@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-trend-wave-engine-demo"
+version = "0.1.0"
+description = "Sanitized offline demo for trend-wave crypto-market research."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "matewolf" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
