@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Demo candidate report preview</title>
+  <desc id="desc">A sanitized dashboard-style preview for the public demo repository.</desc>
+  <rect width="960" height="420" fill="#0f172a"/>
+  <rect x="36" y="34" width="888" height="352" rx="8" fill="#111827" stroke="#334155"/>
+  <text x="64" y="82" fill="#e5e7eb" font-family="Segoe UI, Arial" font-size="28" font-weight="700">Crypto Trend Wave Engine Demo</text>
+  <text x="64" y="116" fill="#94a3b8" font-family="Segoe UI, Arial" font-size="15">Synthetic market snapshots · reduced scoring · read-only risk boundary</text>
+  <g font-family="Segoe UI, Arial" font-size="15">
+    <rect x="64" y="152" width="832" height="44" fill="#1f2937"/>
+    <text x="88" y="180" fill="#cbd5e1">Symbol</text>
+    <text x="244" y="180" fill="#cbd5e1">Score</text>
+    <text x="384" y="180" fill="#cbd5e1">Trend</text>
+    <text x="524" y="180" fill="#cbd5e1">Flow</text>
+    <text x="664" y="180" fill="#cbd5e1">Demo Boundary</text>
+    <rect x="64" y="196" width="832" height="48" fill="#0b1220"/>
+    <text x="88" y="226" fill="#f8fafc">SOLUSDT</text>
+    <text x="244" y="226" fill="#22c55e">72.84</text>
+    <text x="384" y="226" fill="#f8fafc">27.60</text>
+    <text x="524" y="226" fill="#f8fafc">25.18</text>
+    <text x="664" y="226" fill="#f8fafc">5.0% max / 3.2% stop</text>
+    <rect x="64" y="244" width="832" height="48" fill="#111827"/>
+    <text x="88" y="274" fill="#f8fafc">BTCUSDT</text>
+    <text x="244" y="274" fill="#84cc16">69.12</text>
+    <text x="384" y="274" fill="#f8fafc">28.80</text>
+    <text x="524" y="274" fill="#f8fafc">21.26</text>
+    <text x="664" y="274" fill="#f8fafc">3.0% max / 4.0% stop</text>
+    <rect x="64" y="292" width="832" height="48" fill="#0b1220"/>
+    <text x="88" y="322" fill="#f8fafc">ETHUSDT</text>
+    <text x="244" y="322" fill="#84cc16">64.40</text>
+    <text x="384" y="322" fill="#f8fafc">26.40</text>
+    <text x="524" y="322" fill="#f8fafc">19.70</text>
+    <text x="664" y="322" fill="#f8fafc">3.0% max / 4.0% stop</text>
+  </g>
+</svg>
