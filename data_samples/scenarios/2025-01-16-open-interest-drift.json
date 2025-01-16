@@ -1,0 +1,16 @@
+{
+  "date": "2025-01-16",
+  "topic": "open-interest-drift",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "source": "synthetic-demo",
+  "notes": "Public fixture; not copied from private runtime data.",
+  "metrics": {
+    "trend_strength": 0.778,
+    "flow_score": 22.05,
+    "risk_penalty": 3.6
+  }
+}
