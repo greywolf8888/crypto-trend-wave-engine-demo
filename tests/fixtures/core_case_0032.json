@@ -1,0 +1,7 @@
+{
+  "case_id": "core-0032",
+  "date": "2025-03-01",
+  "topic": "walk-forward-note",
+  "expected_boundary": "watchlist",
+  "synthetic": true
+}
