@@ -1,0 +1,16 @@
+# Market Regime Note Review
+
+Date: 2025-07-07
+
+This sanitized note records the public-demo reasoning for `market-regime-note` without
+exposing private signals, live orders, or account-specific data.
+
+## Public Outcome
+
+- Kept the example offline and reproducible.
+- Documented the decision as a reduced demo artifact.
+- Avoided private thresholds and production routing details.
+
+## 中文摘要
+
+该记录仅用于公开演示，保留离线复核结论，不包含私有信号、真实订单或账户数据。
