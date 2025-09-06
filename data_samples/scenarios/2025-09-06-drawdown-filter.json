@@ -1,0 +1,16 @@
+{
+  "date": "2025-09-06",
+  "topic": "drawdown-filter",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "source": "synthetic-demo",
+  "notes": "Public fixture; not copied from private runtime data.",
+  "metrics": {
+    "trend_strength": 0.532,
+    "flow_score": 22.05,
+    "risk_penalty": 2.8
+  }
+}
