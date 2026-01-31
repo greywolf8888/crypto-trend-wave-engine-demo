@@ -1,0 +1,7 @@
+{
+  "case_id": "core-0156",
+  "date": "2026-01-31",
+  "topic": "risk-penalty",
+  "expected_boundary": "watchlist",
+  "synthetic": true
+}
