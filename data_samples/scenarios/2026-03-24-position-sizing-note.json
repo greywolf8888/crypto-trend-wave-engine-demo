@@ -1,0 +1,16 @@
+{
+  "date": "2026-03-24",
+  "topic": "position-sizing-note",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "source": "synthetic-demo",
+  "notes": "Public fixture; not copied from private runtime data.",
+  "metrics": {
+    "trend_strength": 0.532,
+    "flow_score": 24.75,
+    "risk_penalty": 4.4
+  }
+}
