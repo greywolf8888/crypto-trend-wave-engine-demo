@@ -1,6 +1,6 @@
-# Crypto Trend Wave Engine Demo
+# Crypto Trend Wave Engine
 
-![Status](https://img.shields.io/badge/status-sanitized_demo-0f766e)
+![Status](https://img.shields.io/badge/status-sanitized_release-0f766e)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![CI](https://img.shields.io/badge/ci-unittest-16a34a)
 ![Mode](https://img.shields.io/badge/mode-offline_research-2563EB)
@@ -8,8 +8,8 @@
 
 [English README](README.md) · [架构说明](docs/architecture.md) · [案例复盘](docs/case-study.md) · [脱敏策略](docs/sanitization-policy.md)
 
-我把这个仓库做成私有 `main` 分支的公开脱敏演示版。私有项目体量更大；
-我只在这个 demo 中保留适合公开展示的工程形态：合成数据读取、低版本趋势浪型评分、
+我把这个仓库做成私有 `main` 分支的公开脱敏版本。私有项目体量更大；
+这个公开版本只保留适合展示的工程形态：合成数据读取、低版本趋势浪型评分、
 显式风控边界、Markdown 报告、测试、CI，以及能解释工作流的文档。
 
 这不是交易机器人发布版。它不连接交易所、不下单、不包含账户数据、API key、
@@ -17,19 +17,19 @@
 
 ![演示报告预览](docs/assets/demo-report-preview.svg)
 
-## 我想展示什么
+## 公开版本展示内容
 
-我用这个 demo 展示自己如何组织一个研究密集型后端项目：数据噪声大、策略假设多、
+这个公开版本展示我如何组织一个研究密集型后端项目：数据噪声大、策略假设多、
 风控要求强，所以代码必须有清晰边界和可复核输出。
 
-| 能力面 | demo 中的实现 | 体现的能力 |
+| 能力面 | 公开实现 | 体现的能力 |
 | --- | --- | --- |
 | 数据边界 | `data_samples/` 下的合成 CSV/JSON | 我能把公开样本和私有运行数据隔离。 |
 | 领域模型 | 行情快照、评分、风控边界 dataclass | 我会把业务概念显式建模，而不是到处传原始字典。 |
 | 评分引擎 | 趋势、流动性、资金流、费率、波动惩罚 | 我能把研究假设落成确定性代码。 |
 | 风控层 | 只读仓位上限和止损距离输出 | 我把风险当作产品表面，而不是最后补丁。 |
 | 报告层 | Markdown 候选报告 | 输出能被人复核，不只是给脚本消费。 |
-| 质量门禁 | 标准库测试和 GitHub Actions | 公开 demo 不依赖重环境也能验证。 |
+| 质量门禁 | 标准库测试和 GitHub Actions | 公开版本不依赖重环境也能验证。 |
 
 ## 离线运行
 
@@ -49,19 +49,19 @@ python -m unittest discover -s tests
 | `tests/` | 单元测试和公开 fixture |
 | `.github/workflows/` | 轻量 CI |
 
-## 为什么是 demo
+## 为什么是公开脱敏版本
 
 我在公开前有意降级：
 
 - 用合成样本替换私有行情缓存。
 - 移除交易所密钥、账户状态、实盘路径和生产阈值。
 - 保留架构、命名、测试风格和文档风格。
-- 使用整理后的公开 demo 提交历史，而不是暴露私有运行提交。
+- 使用整理后的公开提交历史，而不是暴露私有运行提交。
 
 ## 文档入口
 
 - [架构说明](docs/architecture.md)
-- [演示 walkthrough](docs/demo-walkthrough.md)
+- [项目 walkthrough](docs/demo-walkthrough.md)
 - [全栈能力映射](docs/full-stack-scope.md)
 - [案例复盘](docs/case-study.md)
 - [脱敏策略](docs/sanitization-policy.md)
