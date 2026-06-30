@@ -15,7 +15,7 @@
 这不是交易机器人发布版。它不连接交易所、不下单、不包含账户数据、API key、
 生产阈值、私有日志或实盘执行路径。
 
-![演示报告预览](docs/assets/demo-report-preview.svg)
+![报告预览](docs/assets/report-preview.svg)
 
 ## 公开版本展示内容
 
@@ -61,7 +61,7 @@ python -m unittest discover -s tests
 ## 文档入口
 
 - [架构说明](docs/architecture.md)
-- [项目 walkthrough](docs/demo-walkthrough.md)
+- [项目 walkthrough](docs/project-walkthrough.md)
 - [全栈能力映射](docs/full-stack-scope.md)
 - [案例复盘](docs/case-study.md)
 - [脱敏策略](docs/sanitization-policy.md)

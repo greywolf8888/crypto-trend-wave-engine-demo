@@ -19,7 +19,7 @@ This is not a trading bot release. It does not connect to an exchange, does not
 place orders, and does not include account data, API keys, production thresholds,
 private logs, or live execution routes.
 
-![Report preview](docs/assets/demo-report-preview.svg)
+![Report preview](docs/assets/report-preview.svg)
 
 ## What This Release Shows
 
@@ -93,7 +93,7 @@ I intentionally reduced the project before publishing it:
 ## Documentation
 
 - [Architecture](docs/architecture.md)
-- [Project walkthrough](docs/demo-walkthrough.md)
+- [Project walkthrough](docs/project-walkthrough.md)
 - [Full-stack scope](docs/full-stack-scope.md)
 - [Case study](docs/case-study.md)
 - [Sanitization policy](docs/sanitization-policy.md)
