@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Crypto Trend Wave Engine Demo social preview</title>
+  <desc id="desc">A portfolio preview for a sanitized crypto-market research engine demo.</desc>
+  <rect width="1280" height="640" fill="#0b1220"/>
+  <rect x="72" y="72" width="1136" height="496" rx="18" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="116" y="154" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700">Crypto Trend Wave Engine</text>
+  <text x="116" y="204" fill="#38bdf8" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600">Sanitized Research-Core Demo</text>
+  <text x="116" y="262" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="24">I built this public slice to show deterministic scoring, risk boundaries,</text>
+  <text x="116" y="298" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="24">offline reporting, tests, and a clean private/public data boundary.</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="22">
+    <rect x="116" y="366" width="226" height="62" rx="10" fill="#0f766e"/>
+    <text x="146" y="406" fill="#ecfeff">Python backend</text>
+    <rect x="366" y="366" width="226" height="62" rx="10" fill="#2563eb"/>
+    <text x="396" y="406" fill="#eff6ff">Risk-first flow</text>
+    <rect x="616" y="366" width="226" height="62" rx="10" fill="#7c3aed"/>
+    <text x="646" y="406" fill="#f5f3ff">Synthetic data</text>
+    <rect x="866" y="366" width="226" height="62" rx="10" fill="#ca8a04"/>
+    <text x="896" y="406" fill="#fefce8">CI + docs</text>
+  </g>
+  <text x="116" y="506" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="20">github.com/greywolf8888/crypto-trend-wave-engine-demo</text>
+</svg>

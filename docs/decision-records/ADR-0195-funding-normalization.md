@@ -8,7 +8,7 @@ Keep `funding-normalization` in the public demo as a reduced, explanatory artifa
 
 ## Boundary
 
-The demo may describe the workflow pattern, but it must not publish private
+I let this demo describe the workflow pattern, but I do not publish private
 thresholds, account identifiers, runtime caches, or live execution paths.
 
 ## 中文摘要

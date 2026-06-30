@@ -1,6 +1,6 @@
 # Runbook
 
-This demo is designed for offline review.
+I designed this demo for offline review.
 
 ```powershell
 $env:PYTHONPATH="src"

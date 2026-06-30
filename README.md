@@ -2,45 +2,105 @@
 
 ![Status](https://img.shields.io/badge/status-sanitized_demo-0f766e)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
-![Mode](https://img.shields.io/badge/mode-research_only-2563EB)
+![CI](https://img.shields.io/badge/ci-unittest-16a34a)
+![Mode](https://img.shields.io/badge/mode-offline_research-2563EB)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-[中文说明](README.zh-CN.md)
+[中文说明](README.zh-CN.md) · [Architecture](docs/architecture.md) · [Case Study](docs/case-study.md) · [Sanitization Policy](docs/sanitization-policy.md)
 
-Crypto Trend Wave Engine Demo is a public, sanitized, low-version demonstration
-of a private crypto-market research workflow. It keeps only offline scoring,
-synthetic samples, documentation, and testable boundaries that are safe to publish.
+I built this repository as the public, sanitized demo for the private `main`
+branch of my crypto-market research system. The private project is larger; this
+demo keeps the publishable engineering shape: synthetic data loading, reduced
+trend-wave scoring, explicit risk boundaries, Markdown reporting, tests, CI, and
+documentation that explains the workflow without exposing private runtime data.
 
-This demo does not connect to an exchange, does not place orders, and does not
-contain private account data, API keys, live trading logs, or proprietary runtime data.
+This is not a trading bot release. It does not connect to an exchange, does not
+place orders, and does not include account data, API keys, production thresholds,
+private logs, or live execution routes.
 
 ![Demo report preview](docs/assets/demo-report-preview.svg)
 
-## What This Demo Shows
+## What I Am Demonstrating
 
-- Synthetic market snapshot loading.
-- Reduced trend-wave factor scoring.
-- Read-only risk boundary checks.
-- Candidate ranking and Markdown report rendering.
-- Internationalized documentation for public readers.
+I use this demo to show how I structure a research-heavy backend project when
+the domain has noisy data, risk constraints, and audit requirements.
 
-## Repository Map
+| Area | What I built in this demo | What it demonstrates |
+| --- | --- | --- |
+| Data boundary | Synthetic CSV/JSON fixtures under `data_samples/` | I can separate public fixtures from private runtime data. |
+| Domain model | Typed dataclasses for snapshots, scores, and risk boundaries | I keep business concepts explicit instead of passing raw dictionaries everywhere. |
+| Scoring engine | Reduced trend, liquidity, flow, funding, and volatility factors | I can turn research assumptions into deterministic code. |
+| Risk layer | Read-only position and stop-distance boundary output | I treat risk as a first-class product surface, not an afterthought. |
+| Reporting | Markdown candidate report renderer | I make results reviewable by humans, not only consumable by scripts. |
+| Quality gate | Standard-library unit tests and GitHub Actions workflow | I keep the public demo verifiable without heavy dependencies. |
 
-| Path | Purpose |
-| --- | --- |
-| `src/trend_wave_demo/` | Offline demo scoring package |
-| `data_samples/` | Synthetic CSV and JSON fixtures |
-| `docs/` | Architecture, runbook, safety boundary, and demo data policy |
-| `tests/` | Standard-library validation tests |
+## Architecture Snapshot
+
+```mermaid
+flowchart LR
+  A[Synthetic market snapshot] --> B[Data loader]
+  B --> C[MarketSnapshot model]
+  C --> D[Trend-wave factor scoring]
+  D --> E[Candidate ranking]
+  E --> F[Risk boundary]
+  E --> G[Markdown report]
+  F --> G
+```
+
+My private system has more adapters and operational paths. In this demo I kept
+only the offline core so reviewers can see the project design without receiving
+private strategy code or real account context.
 
 ## Offline Usage
 
 ```powershell
 $env:PYTHONPATH="src"
-python -m trend_wave_demo.cli --sample data_samples/market_snapshot.csv
+python -m trend_wave_demo.cli --sample data_samples/market_snapshot.csv --limit 5
+python -m unittest discover -s tests
 ```
+
+Example output:
+
+```text
+# Demo Candidate Report
+
+| Symbol | Score | Trend | Flow | Risk Penalty | Demo Boundary |
+| --- | ---: | ---: | ---: | ---: | --- |
+| BTCUSDT | 74.04 | 28.80 | 15.24 | 0.00 | 5.0% max / 3.2% stop |
+| ETHUSDT | 69.21 | 26.40 | 13.56 | 0.00 | 3.0% max / 4.0% stop |
+```
+
+## Repository Map
+
+| Path | Purpose |
+| --- | --- |
+| `src/trend_wave_demo/` | Offline scoring, ranking, risk, CLI, and report code |
+| `data_samples/` | Synthetic market snapshots and scenario fixtures |
+| `docs/` | Architecture, demo walkthrough, case study, sanitization policy, and research notes |
+| `tests/` | Unit tests and public fixtures |
+| `.github/workflows/` | Lightweight CI validation |
+
+## Why This Is a Demo
+
+I intentionally reduced the project before publishing it:
+
+- I replaced private market caches with synthetic fixtures.
+- I removed exchange credentials, account state, live routes, and production thresholds.
+- I kept the architecture, naming, testing style, and documentation style visible.
+- I wrote the commit history as a curated public demo history instead of exposing private runtime commits.
+
+## Documentation
+
+- [Architecture](docs/architecture.md)
+- [Demo walkthrough](docs/demo-walkthrough.md)
+- [Full-stack scope](docs/full-stack-scope.md)
+- [Case study](docs/case-study.md)
+- [Sanitization policy](docs/sanitization-policy.md)
+- [Runbook](docs/runbook.md)
+- [Release notes](RELEASE_NOTES.md)
 
 ## Public Boundary
 
-This repository is intended for portfolio review and technical communication.
-It is not investment advice and it is not a production trading system.
+I maintain this repository for portfolio review and technical communication. I
+do not present it as investment advice, a production trading system, or a
+promise of trading performance.

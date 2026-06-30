@@ -2,7 +2,7 @@
 
 Date: 2025-01-03
 
-This sanitized note records the public-demo reasoning for `market-regime-note` without
+I use this sanitized note to record the public-demo reasoning for `market-regime-note` without
 exposing private signals, live orders, or account-specific data.
 
 ## Public Outcome
@@ -13,4 +13,4 @@ exposing private signals, live orders, or account-specific data.
 
 ## 中文摘要
 
-该记录仅用于公开演示，保留离线复核结论，不包含私有信号、真实订单或账户数据。
+我只把该记录用于公开演示，保留离线复核结论，不包含私有信号、真实订单或账户数据。

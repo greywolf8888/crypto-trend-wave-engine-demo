@@ -1,12 +1,19 @@
 # Repository Description
 
-Sanitized low-version demo of an offline crypto trend-wave research engine.
+I use this repository as the public, sanitized demo for the private research-core
+branch of my crypto-market system. It demonstrates Python backend structure,
+synthetic data boundaries, reduced factor scoring, read-only risk output, tests,
+CI, and bilingual documentation.
 
-This public repository is a sanitized demo. It uses synthetic data, reduced logic,
-and offline examples only. It does not include the private production repository,
-account information, exchange credentials, real trading logs, or proprietary runtime data.
+I keep this public repository limited to synthetic data, reduced logic, and offline examples
+only. I do not include the private production repository, account information,
+exchange credentials, real trading logs, or proprietary runtime data.
+
+Suggested GitHub description:
+
+> Public sanitized demo of my Python crypto trend-wave research engine: synthetic data, reduced scoring, risk boundaries, tests, CI, and bilingual docs.
 
 ## 中文说明
 
-本公开仓库是脱敏演示版，仅包含合成数据、低版本示例逻辑和离线说明。
-私有生产仓库、账户信息、交易所密钥、真实交易日志和专有运行数据均未包含在内。
+这个仓库是我私有加密市场研究内核的公开脱敏演示版，用于展示 Python 后端结构、
+合成数据边界、低版本因子评分、只读风控输出、测试、CI 和中英文文档。
